@@ -289,6 +289,15 @@
       padding: 50px 100px;
       flex-direction: column;
     }
+
+    .s-name-other-cards-div {
+  gap: 10px;
+  padding: 5%;
+}
+
+.s-name-other-card-div {
+  width: 95%;
+}
 }
 
 /* ----------- 860px ----------- */
