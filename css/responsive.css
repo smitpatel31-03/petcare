@@ -73,7 +73,17 @@
   .h-faq-section{
     display: flex;
     flex-direction: column;
+    padding: 20px 0%;
+    gap: 40px;
+  }
 
+  .a-faq-heading-image-div{
+    width: 70vw;
+    margin-bottom: 0px;
+  }
+
+  .h-our-pricing-subscription-cards-div{
+    width: 80%;
   }
 
     .h-section-6 {
@@ -207,7 +217,11 @@
   }
 
   .h-our-pricing-image-div {
-    max-width: 100%;
+    width: 100%;
+  }
+
+  #h-our-pricing-image{
+    width: 80vw;
   }
 
   .h-our-pricing-subscription-cards-div {
@@ -444,6 +458,8 @@
   .h-our-services-card-description-description {
     font-size: 0.95rem;
   }
+
+
 
     .h-our-pricing {
     padding: 60px 20px;
