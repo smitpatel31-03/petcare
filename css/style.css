@@ -1819,6 +1819,8 @@ a{
   border: 6px solid #3c312a;
   margin-bottom: 40px;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .s-name-other-card-div {
