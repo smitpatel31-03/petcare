@@ -1814,10 +1814,11 @@ a{
   flex-wrap: wrap;
   gap: 20px;
   background: #3c312a;
-  padding: 20px;
+  padding: 4%;
   border-radius: 14px;
   border: 6px solid #3c312a;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .s-name-other-card-div {
@@ -1825,6 +1826,7 @@ a{
   padding: 15px;
   text-align: center;
   border-radius: 10px;
+  width: 48%;
 }
 
 .s-name-other-card-heading {
