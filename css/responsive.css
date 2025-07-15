@@ -55,6 +55,12 @@
     gap: 1.5rem;
   }
 
+  .h-our-pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
     .h-our-pricing-heading-image-div {
     flex-direction: row;
     gap: 40px;
@@ -62,6 +68,12 @@
 
   #h-our-pricing-heading {
     font-size: 2.4rem;
+  }
+
+  .h-faq-section{
+    display: flex;
+    flex-direction: column;
+
   }
 
     .h-section-6 {
