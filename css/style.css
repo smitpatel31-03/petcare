@@ -214,7 +214,7 @@ a{
 }
 
 #h-banner-slider-2 {
-  background-image: url('./public/images/h_banner_image_2.jpg');
+  background-image: url('../public/images/h_banner_image_2.jpg');
   display: none;
 }
 
