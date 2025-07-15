@@ -15,7 +15,7 @@
     <footer class="footerContainer">
         <section class="fotter-logo-navigation-section">
             <div class="footer-logo-description-subscription-div">
-                <a href="/"><img src="" alt="" id="footer-logo" class="logo"></a>
+                <a href="/"><img src="public/images/logo.png" alt="" id="footer-logo" class="logo"></a>
                 <p id="footer-description">We’re here to care for your pets and answer all your questions! Whether
                     you’re a new pet parent or want to schedule an appointment.</p>
                 <div class="footer-subscription-div">
@@ -86,7 +86,7 @@
 
         <section class="footer-copyright-social-links-section">
             <div class="footer-copyright-div">
-                <p class="footer-copyright">© Copyright <span class="year">  </span>. All rights reserved. <a
+                <p class="footer-copyright">© Copyright <span class="year"> 2029  </span>. All rights reserved. <a
                         href="/">Company Name</a>. Designed by <a href="https://shriiitrackingsolution.in/">Shriii
                         Tracking Solution</a></p>
             </div>
@@ -130,11 +130,7 @@
     </footer>
 
     <script>
-        let date = new Date()
-
-        document.querySelectorAll('.year').forEach(el => el.innerHTML = date.getFullYear())
-
-
+        document.querySelectorAll('.year').forEach(el => el.innerHTML =  new Date().getFullYear())
     </script>
 </body>
 

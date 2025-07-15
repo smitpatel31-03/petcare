@@ -656,7 +656,7 @@
             });
         });
     </script>
-    
+
     <script>
         document.querySelectorAll('.h-our-team-cards').forEach((card) => {
             const content = card.querySelector('.h-our-team-card-content');
@@ -736,9 +736,7 @@
                 navMenu.classList.remove('active');
                 document.querySelector('.hamburger').style.display = "block";
             });
-
-            const date = new Date();
-            document.querySelectorAll(".year").forEach(el => el.textContent = date.getFullYear());
+            document.querySelectorAll('.year').forEach(el => el.innerHTML = new Date().getFullYear())
         })
 
     </script>
