@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -142,7 +146,7 @@
 
     <footer class="footer"></footer>
 
-    <script>
+     <script>
         Promise.all([
             fetch('header.html').then(res => res.text()),
             fetch('footer.html').then(res => res.text())
@@ -166,7 +170,69 @@
 
             const date = new Date();
             document.querySelectorAll(".year").forEach(el => el.textContent = date.getFullYear());
+
+
+            Promise.all([
+                fetch("https://script.google.com/macros/s/AKfycbz3ASi_hM1K0OG9iNq5jfwr1WY4vffWig9IBCGMgQVC8Fsdp4q6CAGHgx4SeJsXFeZfJg/exec")
+                .then(res => res.json())
+            ]).then(data => {
+                data = data[0]
+                console.log("data :",data);
+
+                setHeaderAndFooter(data);
+
+                document.getElementById("s-name-image-5").src = data.s_image_5
+                document.getElementById("s-name-heading-5").textContent = data.s_name_heading_5
+                document.getElementById("s-name-description-5").textContent = data.s_name_description_5
+
+                for(let i = 1; i <= 4; i++){
+                    document.getElementById(`s-name-other-card-heading-5-${i}`).textContent = data[`s_name_other_card_heading_5_${i}`]
+                    document.getElementById(`s-name-other-card-description-5-${i}`).textContent = data[`s_name_other_card_description_5_${i}`]
+                }
+                
+            })
         })
+
+                 function setHeaderAndFooter(data) {
+            console.log("data :", data);
+
+            document.querySelectorAll(".logo").forEach(el => el.src = data.logo)
+            document.querySelectorAll(".s1-name").forEach(el => el.textContent = data.s1_name)
+            document.querySelectorAll(".s2-name").forEach(el => el.textContent = data.s2_name)
+            document.querySelectorAll(".s3-name").forEach(el => el.textContent = data.s3_name)
+            document.querySelectorAll(".s4-name").forEach(el => el.textContent = data.s4_name)
+            document.querySelectorAll(".s5-name").forEach(el => el.textContent = data.s5_name)
+            document.querySelectorAll(".s6-name").forEach(el => el.textContent = data.s6_name)
+            document.getElementById("footer-description").textContent = data.footer_description
+            document.getElementById("footer-opeaning-hours-Monday").textContent = data.footer_opeaning_hours_Monday
+            document.getElementById("footer-opeaning-hours-Tuesday").textContent = data.footer_opeaning_hours_Tuesday
+            document.getElementById("footer-opeaning-hours-Wednesday").textContent = data.footer_opeaning_hours_Wednesday
+            document.getElementById("footer-opeaning-hours-Thursday").textContent = data.footer_opeaning_hours_Thursday
+            document.getElementById("footer-opeaning-hours-Friday").textContent = data.footer_opeaning_hours_Friday
+            document.getElementById("footer-opeaning-hours-Saturday").textContent = data.footer_opeaning_hours_Saturday
+            document.getElementById("footer-opeaning-hours-Saturday").textContent = data.footer_opeaning_hours_Saturday
+            document.querySelectorAll("company-name").forEach(el => el.textContent = data.company_name)
+            document.querySelectorAll(".facebook").forEach(el => el.href = data.Facebook)
+            document.querySelectorAll(".instagram").forEach(el => el.href = data.instagram)
+            if (data.X && data.X.trim() !== "") {
+                document.querySelectorAll(".X").forEach(el => {
+                    el.style.display = "flex";
+                    el.href = data.X
+                })
+            }
+            if (data.Linkedin && data.Linkedin.trim() !== "") {
+                document.querySelectorAll(".linkedin").forEach(el => {
+                    el.style.display = "flex";
+                    el.href = data.X
+                })
+            }
+            if (data.youtube && data.Youtube.trim !== "") {
+                document.querySelectorAll(".youtube").forEach(el => {
+                    el.style.display = "flex";
+                    el.href = data.X
+                })
+            }
+        }
 
     </script>
 

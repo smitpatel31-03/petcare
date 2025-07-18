@@ -25,7 +25,7 @@
         </section>
 
         <section class="s-cards-div">
-            <a href="">
+            <a href="service1.html">
                 <div class="s-cards" id="s-card-1">
                     <img src="" alt="" class="s-cards-image" id="s-card-image-1">
                     <h4 class="s-cards-heading" id="s-card-heading-1">Pets Surgical Services</h4>
@@ -34,7 +34,7 @@
                 </div>
             </a>
 
-            <a href="">
+            <a href="service2.html">
                 <div class="s-cards" id="s-card-2">
                     <img src="" alt="" class="s-cards-image" id="s-card-image-2">
                     <h4 class="s-cards-heading" id="s-card-heading-2">Pets Surgical Services</h4>
@@ -43,7 +43,7 @@
                 </div>
             </a>
 
-            <a href="">
+            <a href="service3.html">
                 <div class="s-cards" id="s-card-3">
                     <img src="" alt="" class="s-cards-image" id="s-card-image-3">
                     <h4 class="s-cards-heading" id="s-card-heading-3">Pets Surgical Services</h4>
@@ -52,7 +52,7 @@
                 </div>
             </a>
 
-            <a href="">
+            <a href="service4.html">
                 <div class="s-cards" id="s-card-4">
                     <img src="" alt="" class="s-cards-image" id="s-card-image-4">
                     <h4 class="s-cards-heading" id="s-card-heading-4">Pets Surgical Services</h4>
@@ -61,7 +61,7 @@
                 </div>
             </a>
 
-            <a href="">
+            <a href="service5.html">
                 <div class="s-cards" id="s-card-5">
                     <img src="" alt="" class="s-cards-image" id="s-card-image-5">
                     <h4 class="s-cards-heading" id="s-card-heading-5">Pets Surgical Services</h4>
@@ -70,9 +70,9 @@
                 </div>
             </a>
 
-            <a href="">
+            <a href="service6.html">
                 <div class="s-cards" id="s-card-5">
-                    <img src="" alt="" class="s-cards-image" id="s-card-image-5">
+                    <img src="" alt="" class="s-cards-image" id="s-card-image-6">
                     <h4 class="s-cards-heading" id="s-card-heading-5">Pets Surgical Services</h4>
                     <p class="s-cards-description" id="s-card-description-5">We Love to Take Care of Your Pets Caring
                         for pets involves much more than providing..</p>
@@ -108,9 +108,86 @@
 
             const date = new Date();
             document.querySelectorAll(".year").forEach(el => el.textContent = date.getFullYear());
+
+            Promise.all([
+                fetch("https://script.google.com/macros/s/AKfycbz3ASi_hM1K0OG9iNq5jfwr1WY4vffWig9IBCGMgQVC8Fsdp4q6CAGHgx4SeJsXFeZfJg/exec")
+                .then(res => res.json())
+            ]).then(data => {
+                data = data[0]
+                console.log("data :",data);
+
+                setHeaderAndFooter(data);
+
+                document.getElementById("s-card-image-1").src = data.s_image_1
+                document.getElementById("s-card-heading-1").textContent = data.s_card_heading_1
+                document.getElementById("s-card-description-1").textContent = data.s_card_description_1
+
+                document.getElementById("s-card-image-2").src = data.s_image_2
+                document.getElementById("s-card-heading-2").textContent = data.s_card_heading_2
+                document.getElementById("s-card-description-2").textContent = data.s_card_description_2
+
+                document.getElementById("s-card-image-3").src = data.s_image_3
+                document.getElementById("s-card-heading-3").textContent = data.s_card_heading_3
+                document.getElementById("s-card-description-3").textContent = data.s_card_description_3
+
+                document.getElementById("s-card-image-4").src = data.s_image_4
+                document.getElementById("s-card-heading-4").textContent = data.s_card_heading_4
+                document.getElementById("s-card-description-4").textContent = data.s_card_description_4
+
+                document.getElementById("s-card-image-5").src = data.s_image_5
+                document.getElementById("s-card-heading-5").textContent = data.s_card_heading_5
+                document.getElementById("s-card-description-5").textContent = data.s_card_description_5
+
+                document.getElementById("s-card-image-6").src = data.s_image_6
+                document.getElementById("s-card-heading-6").textContent = data.s_card_heading_6
+                document.getElementById("s-card-description-6").textContent = data.s_card_description_6
+                
+            })
         })
 
+                function setHeaderAndFooter(data){
+                console.log("data :", data);
+
+                document.querySelectorAll(".logo").forEach(el => el.src = data.logo)
+                document.querySelectorAll(".s1-name").forEach(el => el.textContent = data.s1_name)
+                document.querySelectorAll(".s2-name").forEach(el => el.textContent = data.s2_name)
+                document.querySelectorAll(".s3-name").forEach(el => el.textContent = data.s3_name)
+                document.querySelectorAll(".s4-name").forEach(el => el.textContent = data.s4_name)
+                document.querySelectorAll(".s5-name").forEach(el => el.textContent = data.s5_name)
+                document.querySelectorAll(".s6-name").forEach(el => el.textContent = data.s6_name)
+                document.getElementById("footer-description").textContent = data.footer_description
+                document.getElementById("footer-opeaning-hours-Monday").textContent = data.footer_opeaning_hours_Monday
+                document.getElementById("footer-opeaning-hours-Tuesday").textContent = data.footer_opeaning_hours_Tuesday
+                document.getElementById("footer-opeaning-hours-Wednesday").textContent = data.footer_opeaning_hours_Wednesday
+                document.getElementById("footer-opeaning-hours-Thursday").textContent = data.footer_opeaning_hours_Thursday
+                document.getElementById("footer-opeaning-hours-Friday").textContent = data.footer_opeaning_hours_Friday
+                document.getElementById("footer-opeaning-hours-Saturday").textContent = data.footer_opeaning_hours_Saturday
+                document.getElementById("footer-opeaning-hours-Saturday").textContent = data.footer_opeaning_hours_Saturday
+                document.querySelectorAll("company-name").forEach(el => el.textContent = data.company_name)
+                document.querySelectorAll(".facebook").forEach(el => el.href = data.Facebook)
+                document.querySelectorAll(".instagram").forEach(el => el.href = data.instagram)
+                if (data.X && data.X.trim() !== "") {
+                    document.querySelectorAll(".X").forEach(el => {
+                        el.style.display = "flex";
+                        el.href = data.X
+                    })
+                }
+                if (data.Linkedin && data.Linkedin.trim() !== "") {
+                    document.querySelectorAll(".linkedin").forEach(el => {
+                        el.style.display = "flex";
+                        el.href = data.X
+                    })
+                }
+                if (data.youtube && data.Youtube.trim !== "") {
+                    document.querySelectorAll(".youtube").forEach(el => {
+                        el.style.display = "flex";
+                        el.href = data.X
+                    })
+                }
+        }
+
     </script>
+
 
 </body>
 

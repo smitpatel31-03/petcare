@@ -140,6 +140,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  .footer-copyright-social-links-section{
+    flex-direction: column-reverse;
+  }
 }
 
 /* ----------- 960px ----------- */
