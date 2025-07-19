@@ -1131,6 +1131,10 @@ a {
   color: #fff;
   padding: 60px 5%;
   font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .fotter-logo-navigation-section {
@@ -1139,6 +1143,11 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
+  flex-direction: column;
+}
+
+.fotter-logo-navigation-section div{
+  text-align: center;
 }
 
 /* ======= LOGO + DESCRIPTION + FORM ======= */
@@ -1146,6 +1155,7 @@ a {
   flex: 1;
   min-width: 260px;
   max-width: 300px;
+  text-align: center;
 }
 
 #footer-description {
@@ -1257,6 +1267,7 @@ a {
   flex: 1;
   color: #e8f8f3;
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .footer-copyright-div a {
