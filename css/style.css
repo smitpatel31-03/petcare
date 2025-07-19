@@ -30,7 +30,7 @@
   position: fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background: rgba(255,255,255,0.8);
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,9 +107,17 @@ a {
 }
 
 /* Header Section */
-.headerContainer {
+.headerContainer0 {
   position: absolute;
   z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.headerContainer {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1952,3 +1960,6 @@ a {
   display: none;
 }
 
+.main-content{
+  display: none;
+}

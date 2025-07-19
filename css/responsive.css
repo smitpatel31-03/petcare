@@ -1,6 +1,6 @@
 /* ----------- 1024px ----------- */
 @media (max-width: 1024px) {
-    .headerContainer {
+  .headerContainer {
     justify-content: space-between;
     padding: 20px;
   }
@@ -44,24 +44,24 @@
     gap: 60px;
   }
 
-  .h-section-1{
-  display: flex;
-  padding: 60px 50px;
-  column-gap: 50px;
-  flex-wrap: wrap;
-}
+  .h-section-1 {
+    display: flex;
+    padding: 60px 50px;
+    column-gap: 50px;
+    flex-wrap: wrap;
+  }
 
   .h-our-services-cards-div {
     gap: 1.5rem;
   }
 
-  .h-our-pricing{
+  .h-our-pricing {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-    .h-our-pricing-heading-image-div {
+  .h-our-pricing-heading-image-div {
     flex-direction: row;
     gap: 40px;
   }
@@ -70,23 +70,23 @@
     font-size: 2.4rem;
   }
 
-  .h-faq-section{
+  .h-faq-section {
     display: flex;
     flex-direction: column;
     padding: 20px 0%;
     gap: 40px;
   }
 
-  .a-faq-heading-image-div{
+  .a-faq-heading-image-div {
     width: 70vw;
     margin-bottom: 0px;
   }
 
-  .h-our-pricing-subscription-cards-div{
+  .h-our-pricing-subscription-cards-div {
     width: 80%;
   }
 
-    .h-section-6 {
+  .h-section-6 {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -106,7 +106,7 @@
     text-align: center;
   }
 
-    .a-about-us-description-div {
+  .a-about-us-description-div {
     max-width: 100%;
   }
 
@@ -114,7 +114,7 @@
     padding: 50px 4%;
   }
 
-    .s-cards-image {
+  .s-cards-image {
     height: 180px;
   }
 
@@ -122,7 +122,7 @@
     font-size: 1.1rem;
   }
 
-    #c-heading {
+  #c-heading {
     font-size: 2rem;
   }
 
@@ -130,19 +130,23 @@
     gap: 30px;
   }
 
-    .c-form {
+  .c-form {
     gap: 16px;
     padding: 32px 20px;
   }
 
-  .s-name-main-section{
+  .s-name-main-section {
     padding: 50px 200px;
     justify-content: center;
     align-items: center;
   }
 
-  .footer-copyright-social-links-section{
+  .footer-copyright-social-links-section {
     flex-direction: column-reverse;
+  }
+
+  #h-section-1-card-2 {
+    border: none;
   }
 }
 
@@ -183,37 +187,34 @@
     gap: 40px;
   }
 
-  #h-section-1-card-2{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: none;
-  border-left: none;
-}
+  #h-section-1-card-2 {
+    border: none;
+  }
 
-.h-section-1-card{
-  padding: 80px 0px;
-}
+  .h-section-1-card {
+    padding: 80px 0px;
+  }
 
-.h-our-team{
-  padding: 1rem 5rem;
-}
+  .h-our-team {
+    padding: 1rem 5rem;
+  }
 
   .h-our-services-card {
     width: 280px;
   }
 
-  #h-our-services-card-2{
-  flex-direction: column;
-}
+  #h-our-services-card-2 {
+    flex-direction: column;
+  }
 
 
-#h-our-servives-card-description-2{
-  border-radius: 50% 50% 0 0;
-}
+  #h-our-servives-card-description-2 {
+    border-radius: 50% 50% 0 0;
+  }
 
-#h-our-services-card-image-div-2{
-  border-radius: 0 0 50% 50%;
-}
+  #h-our-services-card-image-div-2 {
+    border-radius: 0 0 50% 50%;
+  }
 
   .h-our-pricing-heading-image-div {
     flex-direction: column;
@@ -224,7 +225,7 @@
     width: 100%;
   }
 
-  #h-our-pricing-image{
+  #h-our-pricing-image {
     width: 80vw;
   }
 
@@ -236,7 +237,7 @@
     font-size: 2.2rem;
   }
 
-    .h-section-6-photo-div {
+  .h-section-6-photo-div {
     display: none;
   }
 
@@ -256,7 +257,7 @@
     font-size: 0.95rem;
   }
 
-    .a-about-us-image-description-div {
+  .a-about-us-image-description-div {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -266,7 +267,7 @@
     margin-top: 20px;
   }
 
-    .s-cards-div {
+  .s-cards-div {
     gap: 24px;
     padding: 50px 4%;
   }
@@ -275,7 +276,7 @@
     font-size: 0.9rem;
   }
 
-    .c-cards {
+  .c-cards {
     flex: 1 1 250px;
   }
 
@@ -283,25 +284,25 @@
     font-size: 0.95rem;
   }
 
-    .c-form input[type="text"],
+  .c-form input[type="text"],
   .c-form input[type="email"],
   .c-form input[type="number"] {
     flex: 1 1 100%;
   }
 
-    .s-name-main-section{
-      padding: 50px 100px;
-      flex-direction: column;
-    }
+  .s-name-main-section {
+    padding: 50px 100px;
+    flex-direction: column;
+  }
 
-    .s-name-other-cards-div {
-  gap: 10px;
-  padding: 5%;
-}
+  .s-name-other-cards-div {
+    gap: 10px;
+    padding: 5%;
+  }
 
-.s-name-other-card-div {
-  width: 95%;
-}
+  .s-name-other-card-div {
+    width: 95%;
+  }
 }
 
 /* ----------- 860px ----------- */
@@ -327,7 +328,7 @@
     gap: 20px;
   }
 
-    #h-our-services-heading {
+  #h-our-services-heading {
     font-size: 2rem;
   }
 
@@ -341,7 +342,7 @@
     align-items: center;
   }
 
-    #h-our-pricing-heading {
+  #h-our-pricing-heading {
     font-size: 2rem;
   }
 
@@ -353,7 +354,7 @@
     font-size: 0.95rem;
   }
 
-    .h-section-6-testimonial-description {
+  .h-section-6-testimonial-description {
     font-size: 0.95rem;
   }
 
@@ -361,7 +362,7 @@
     font-size: 0.9rem;
   }
 
-    #a-about-us-description-heading {
+  #a-about-us-description-heading {
     font-size: 1.8rem;
   }
 
@@ -375,7 +376,7 @@
     height: 20px;
   }
 
-    .s-cards-div a {
+  .s-cards-div a {
     flex: 1 1 280px;
   }
 
@@ -383,7 +384,7 @@
     height: 160px;
   }
 
-    .c-contact-cards-div {
+  .c-contact-cards-div {
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -398,7 +399,7 @@
     font-size: 1.8rem;
   }
 
-    .c-form {
+  .c-form {
     padding: 28px 16px;
   }
 
@@ -407,9 +408,9 @@
     padding: 14px;
   }
 
-    .s-name-main-section{
-      padding: 50px 70px;
-    }
+  .s-name-main-section {
+    padding: 50px 70px;
+  }
 }
 
 /* ----------- 600px ----------- */
@@ -448,11 +449,11 @@
     gap: 10px;
   }
 
-  .h-our-team{
-  padding: 1rem 2rem;
-}
+  .h-our-team {
+    padding: 1rem 2rem;
+  }
 
-    .h-our-services {
+  .h-our-services {
     padding: 3rem 1rem;
   }
 
@@ -474,7 +475,7 @@
 
 
 
-    .h-our-pricing {
+  .h-our-pricing {
     padding: 60px 20px;
   }
 
@@ -495,7 +496,7 @@
     padding: 8px 16px;
   }
 
-    .h-section-6 {
+  .h-section-6 {
     padding: 40px 20px;
   }
 
@@ -512,11 +513,11 @@
     font-size: 1.5rem;
   }
 
-  .a-about-us-images-div{
+  .a-about-us-images-div {
     flex-direction: column;
   }
 
-    .a-about-us-cards-div {
+  .a-about-us-cards-div {
     flex-direction: column;
     align-items: center;
   }
@@ -530,7 +531,7 @@
     padding: 40px 20px;
   }
 
-    .s-cards-div {
+  .s-cards-div {
     padding: 40px 16px;
     gap: 20px;
   }
@@ -547,7 +548,7 @@
     font-size: 0.85rem;
   }
 
-    #c-heading {
+  #c-heading {
     font-size: 1.6rem;
   }
 
@@ -564,7 +565,7 @@
     height: 28px;
   }
 
-    .c-form input,
+  .c-form input,
   .c-form textarea {
     font-size: 0.9rem;
     padding: 14px;
@@ -575,7 +576,7 @@
     padding: 12px;
   }
 
-      .s-name-main-section{
-      padding: 50px 50px;
-    }
+  .s-name-main-section {
+    padding: 50px 50px;
+  }
 }
