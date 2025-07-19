@@ -92,7 +92,7 @@
   }
 
   .h-section-6-photo-div {
-    width: 25%;
+    width: 100%;
   }
 
   .h-section-6-div-2 {
@@ -237,9 +237,6 @@
     font-size: 2.2rem;
   }
 
-  .h-section-6-photo-div {
-    display: none;
-  }
 
   .h-section-6-div-2 {
     width: 100%;
@@ -255,6 +252,8 @@
 
   .h-section-6-div-2-2 {
     font-size: 0.95rem;
+    padding: 1rem;
+    height: auto;
   }
 
   .a-about-us-image-description-div {
@@ -307,6 +306,7 @@
 .h-our-team-cards:hover .h-our-team-card-content {
   opacity: none;
   visibility: visible;
+    transform: none;
 }
 
   .h-our-team-card-content {
