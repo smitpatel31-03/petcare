@@ -870,19 +870,22 @@
         </section>
     </footer>`
 
-                const hamburger = document.getElementById('hamburger');
-            const navMenu = document.getElementById('nav-menu');
-            const closeBtn = document.getElementById('nav-close');
+const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const closeBtn = document.getElementById('nav-close');
 
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.add('active');
-                document.querySelector('.hamburger').style.display = "none";
-            });
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.add('active');
+            document.querySelector('.hamburger').style.display = "none";
+            document.querySelector('.headerContainer0').style.alignItems = "flex-start";
+        });
 
-            closeBtn.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                document.querySelector('.hamburger').style.display = "block";
-            });
+        closeBtn.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            document.querySelector('.hamburger').style.display = "block";
+            document.querySelector('.headerContainer0').style.alignItems = "center";
+        });
+
             
         })
     </script>

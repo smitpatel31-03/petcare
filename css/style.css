@@ -115,6 +115,7 @@ a {
   padding: 5px 0;
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 .headerContainer {
   display: flex;
   justify-content: space-around;
@@ -124,11 +125,18 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.header-navigation ul {
+
+#nav-menu>ul{
   display: flex;
-  justify-content: center;
   gap: 100px;
 }
+
+#nav-menu.active>ul {
+  flex-direction: column;
+  row-gap: 50px;
+  align-items:flex-start;
+}
+
 
 .header-navigation ul li a {
   color: #f0f8ff;
@@ -163,33 +171,26 @@ a {
   display: none;
   background: none;
   border: none;
-  font-size: 28px;
+  font-size: 10px;
   color: white;
-  position: absolute;
-  top: 20px;
-  right: 25px;
   cursor: pointer;
 }
 
 /* Show navigation as popup in small screens */
-.header-navigation.active {
-  position: fixed;
-  top: 0;
-  right: 0;
+.header-navigation.active{
   background-color: #222;
-  height: 100vh;
-  width: 250px;
-  flex-direction: column;
+  padding: 50px 50px;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 10px;
   display: flex;
+  flex-direction: row;
   z-index: 5;
   transition: transform 0.3s ease;
 }
 
 .header-navigation.active .nav-close-btn {
-  display: block;
+  display: flex;
 }
 
 .header-navigation ul li {
@@ -227,7 +228,6 @@ a {
   background-color: #298755;
 }
 
-
 .h-banner {
   width: 100%;
   height: 100vh;
@@ -243,7 +243,6 @@ a {
   justify-content: space-around;
   padding: 0 5px;
   position: relative;
-  z-index: 2;
   background-size: cover;
   /* Scales to fill screen */
   background-position: center;

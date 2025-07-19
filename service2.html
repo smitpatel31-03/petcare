@@ -414,23 +414,24 @@
     </div>
 
     <script>
+const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const closeBtn = document.getElementById('nav-close');
 
-                    const hamburger = document.getElementById('hamburger');
-            const navMenu = document.getElementById('nav-menu');
-            const closeBtn = document.getElementById('nav-close');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.add('active');
+            document.querySelector('.hamburger').style.display = "none";
+            document.querySelector('.headerContainer0').style.alignItems = "flex-start";
+        });
 
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.add('active');
-                document.querySelector('.hamburger').style.display = "none";
-            });
+        closeBtn.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            document.querySelector('.hamburger').style.display = "block";
+            document.querySelector('.headerContainer0').style.alignItems = "center";
+        });
 
-            closeBtn.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                document.querySelector('.hamburger').style.display = "block";
-            });
+        document.querySelectorAll('.year').forEach(el => el.innerHTML = new Date().getFullYear())
 
-        const date = new Date();
-        document.querySelectorAll(".year").forEach(el => el.textContent = date.getFullYear());
 
 
         Promise.all([

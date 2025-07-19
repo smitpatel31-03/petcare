@@ -12,129 +12,268 @@
 </head>
 
 <body>
-    <header class="header"></header>
+    <div id="loader" class="loader">
+        <div class="spinner"></div>
+    </div>
+    <div id="content">
+        <header class="header"></header>
 
-    <main>
-        <section class="c-banner">
-            <h1 id="c-banner-heading">
-                Contact Us
-            </h1>
-            <div class="c-banner-diretorys">
-                <p class="c-banner-diectory"><a href="" class="c-banner-diectory-anchor">Home</a> > Contact Us</p>
-            </div>
-        </section>
+        <main>
+            <section class="c-banner">
+                <h1 id="c-banner-heading">
+                    Contact Us
+                </h1>
+                <div class="c-banner-diretorys">
+                    <p class="c-banner-diectory"><a href="" class="c-banner-diectory-anchor">Home</a> > Contact Us</p>
+                </div>
+            </section>
 
-        <section class="c-heading-contact-cards-section">
-            <div class="c-tagline-heading-description-div">
-                <p id="c-tagline">We Love Your Pets</p>
-                <h2 id="c-heading">Get in Touch</h2>
-                <p id="c-description">
-                    We're excited to hear from you and let's start something special together. call us for any inquiry.
-                </p>
-            </div>
-
-            <div class="c-contact-cards-div">
-                <div class="c-cards" id="c-phone-card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
-                        class="c-contact-card-svg" id="c-contact-card-phone-svg">
-                        <path fill="currentColor"
-                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
-                    </svg>
-
-                    <h4 class="c-contact-card-heading" id="c-contact-card-phone-heading">Phone</h4>
-                    <p><a href="tel:91" class="c-contact-card-description" id="c-contact-card-phone-number-1">+91</a>
-                    </p>
-                    <p><a href="tel:91" class="c-contact-card-description" id="c-contact-card-phone-number-2">+91</a>
+            <section class="c-heading-contact-cards-section">
+                <div class="c-tagline-heading-description-div">
+                    <p id="c-tagline">We Love Your Pets</p>
+                    <h2 id="c-heading">Get in Touch</h2>
+                    <p id="c-description">
+                        We're excited to hear from you and let's start something special together. call us for any
+                        inquiry.
                     </p>
                 </div>
 
-                <div class="c-cards" id="c-email-card">
+                <div class="c-contact-cards-div">
+                    <div class="c-cards" id="c-phone-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                            class="c-contact-card-svg" id="c-contact-card-phone-svg">
+                            <path fill="currentColor"
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z" />
+                        </svg>
+
+                        <h4 class="c-contact-card-heading" id="c-contact-card-phone-heading">Phone</h4>
+                        <p><a href="tel:91" class="c-contact-card-description"
+                                id="c-contact-card-phone-number-1">+91</a>
+                        </p>
+                        <p><a href="tel:91" class="c-contact-card-description"
+                                id="c-contact-card-phone-number-2">+91</a>
+                        </p>
+                    </div>
+
+                    <div class="c-cards" id="c-email-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                            class="c-contact-card-svg" id="c-contact-card-email-svg">
+                            <path fill="currentColor"
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44" />
+                        </svg>
+
+                        <h4 class="c-contact-card-heading" id="c-contact-card-email-heading">Email</h4>
+                        <p><a href="mailto:abc@gmail.com" class="c-contact-card-description"
+                                id="c-contact-card-email-1">abc@gmail.com</a></p>
+                        <p><a href="mailto:abc@gmail.com" class="c-contact-card-description"
+                                id="c-contact-card-email-2">abc@gmail.com</a></p>
+                    </div>
+
+                    <div class="c-cards" id="c-address-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 15 15"
+                            class="c-contact-card-svg" id="c-contact-card-address-svg">
+                            <path fill="currentColor" d="M6 6.496a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1-3 0" />
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M1 6.496A6.5 6.5 0 0 1 7.5 0C11.089 0 14 2.909 14 6.496c0 2.674-1.338 4.793-2.772 6.225a11 11 0 0 1-2.115 1.654c-.322.19-.623.34-.885.442c-.247.098-.506.174-.728.174s-.481-.076-.728-.174a6.5 6.5 0 0 1-.885-.442a11 11 0 0 1-2.115-1.654C2.338 11.289 1 9.17 1 6.496m6.5-2.499a2.5 2.5 0 0 0-2.5 2.5a2.5 2.5 0 0 0 5 0a2.5 2.5 0 0 0-2.5-2.5"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                        <h4 class="c-contact-card-heading" id="c-contact-card-phone-heading">Address</h4>
+                        <p><a href="#" class="c-contact-card-description" id="c-contact-card-address">2220 Colorado
+                                Avenue, 5th Floor Santa Monica California, USA</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-form-section">
+                <div class="c-form-tagline-heading">
+                    <p id="c-form-tagline">Subscribe</p>
+                    <h2 id="c-form-heading">Message us for any inquiry</h2>
+                </div>
+                <div class="c-for-div">
+                    <form action="" class="c-form">
+                        <input type="text" placeholder="Name" id="c-name" required>
+                        <input type="number" placeholder="Phone" id="c-phone-number" required>
+                        <input type="email" placeholder="Email" id="c-email" required>
+                        <input type="text" placeholder="Subject" id="c-subject" required>
+                        <textarea name="Message" id="c-message" placeholder="Message"></textarea>
+                        <input type="submit" value="SEND MESSAGE">
+                    </form>
+                </div>
+
+            </section>
+
+            <section class="c-map-section">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15249885.318783779!2d82.75252935!3d21.0680074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1752495978319!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="c-map"></iframe>
+            </section>
+        </main>
+
+        <footer class="footerContainer">
+            <section class="fotter-logo-navigation-section">
+                <div class="footer-logo-description-subscription-div">
+                    <a href="index.html"><img src="public/images/logo.png" alt="" id="footer-logo" class="logo"></a>
+                    <p id="footer-description">We’re here to care for your pets and answer all your questions! Whether
+                        you’re a new pet parent or want to schedule an appointment.</p>
+                    <div class="footer-subscription-div">
+                        <form action="" class="footer-form">
+                            <input type="email" name="email" id="footer-email" placeholder="Email Address">
+                        </form>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                            class="footer-subscription-svg">
+                            <g fill="none">
+                                <path
+                                    d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                                <path fill="currentColor"
+                                    d="M20.235 5.686c.432-1.195-.726-2.353-1.921-1.92L3.709 9.048c-1.199.434-1.344 2.07-.241 2.709l4.662 2.699l4.163-4.163a1 1 0 0 1 1.414 1.414L9.544 15.87l2.7 4.662c.638 1.103 2.274.957 2.708-.241z" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="footer-quick-links-div">
+                    <h3 class="footer-quick-link-Heading">Quick Links</h3>
+                    <li class="footer-quick-link-lists"><a href="index.html" class="footer-quick-link-anchor">Home</a>
+                    </li>
+                    <li class="footer-quick-link-lists"><a href="about.html" class="footer-quick-link-anchor">About
+                            Us</a></li>
+                    <li class="footer-quick-link-lists"><a href="services.html"
+                            class="footer-quick-link-anchor">Services</a></li>
+                    <li class="footer-quick-link-lists"><a href="contactus.html"
+                            class="footer-quick-link-anchor">Contact Us</a></li>
+                </div>
+
+                <div class="fotter-our-services-div">
+                    <h3 class="footer-our-services-heading">Services</h3>
+                    <li class="footer-our-services-links"><a href="service1.html"
+                            class="footer-our-services-anchor s1-name" id="footer-our-services-1">Services 1</a></li>
+                    <li class="footer-our-services-links"><a href="service2.html"
+                            class="footer-our-services-anchor s2-name" id="footer-our-services-2">Services 2</a></li>
+                    <li class="footer-our-services-links"><a href="service3.html"
+                            class="footer-our-services-anchor s3-name" id="footer-our-services-3">Services 3</a></li>
+                    <li class="footer-our-services-links"><a href="service4.html"
+                            class="footer-our-services-anchor s4-name" id="footer-our-services-4">Services 4</a></li>
+                    <li class="footer-our-services-links"><a href="service5.html"
+                            class="footer-our-services-anchor s5-name" id="footer-our-services-5">Services 5</a></li>
+                    <li class="footer-our-services-links"><a href="service6.html"
+                            class="footer-our-services-anchor s6-name" id="footer-our-services-5">Services 6</a></li>
+                </div>
+
+                <div class="footer-opeaning-hours-div">
+                    <li class="footer-opeaning-hours-list">
+                        <span class="footer-opeaning-hours-day">Monday</span>
+                        <span class="footer-opeaning-hours-timing" id="footer-opeaning-hours-Monday">09:00 A.M. - 06:00
+                            P.M.</span>
+                    </li>
+                    <li class="footer-opeaning-hours-list">
+                        <span class="footer-opeaning-hours-day">Tuesdat</span>
+                        <span class="footer-opeaning-hours-timing" id="footer-opeaning-hours-Tuesday">09:00 A.M. - 06:00
+                            P.M.</span>
+                    </li>
+                    <li class="footer-opeaning-hours-list">
+                        <span class="footer-opeaning-hours-day">Wednusday</span>
+                        <span class="footer-opeaning-hours-timing" id="footer-opeaning-hours-Wednesday">09:00 A.M. -
+                            06:00 P.M.</span>
+                    </li>
+                    <li class="footer-opeaning-hours-list">
+                        <span class="footer-opeaning-hours-day">Thursday</span>
+                        <span class="footer-opeaning-hours-timing" id="footer-opeaning-hours-Thursday">09:00 A.M. -
+                            06:00 P.M.</span>
+                    </li>
+                    <li class="footer-opeaning-hours-list">
+                        <span class="footer-opeaning-hours-day">Friday</span>
+                        <span class="footer-opeaning-hours-timing" id="footer-opeaning-hours-Friday">09:00 A.M. - 06:00
+                            P.M.</span>
+                    </li>
+                    <li class="footer-opeaning-hours-list">
+                        <span class="footer-opeaning-hours-day">Saturday</span>
+                        <span class="footer-opeaning-hours-timing" id="footer-opeaning-hours-Saturday">09:00 A.M. -
+                            06:00 P.M.</span>
+                    </li>
+                    <li class="footer-opeaning-hours-list">
+                        <span class="footer-opeaning-hours-day">Sunday</span>
+                        <span class="footer-opeaning-hours-timing" id="footer-opeaning-hours-Sunday">Emergency
+                            Only</span>
+                    </li>
+                </div>
+            </section>
+
+            <section class="footer-copyright-social-links-section">
+                <div class="footer-copyright-div">
+                    <p class="footer-copyright">© Copyright <span class="year"> 2025 </span>. All rights reserved. <a
+                            href="/" class="company-name">Company Name</a>. Designed by <a
+                            href="https://shriiitrackingsolution.in/">Shriii
+                            Tracking Solution</a></p>
+                </div>
+
+                <div class="footer-socal-links-div">
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
-                        class="c-contact-card-svg" id="c-contact-card-email-svg">
+                        class="footer-socal-link-svg facebook" id="footer-socal-link-svg-1">
                         <path fill="currentColor"
-                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m-.4 4.25l-7.07 4.42c-.32.2-.74.2-1.06 0L4.4 8.25a.85.85 0 1 1 .9-1.44L12 11l6.7-4.19a.85.85 0 1 1 .9 1.44" />
+                            d="M14.5 2.75c-2.861 0-5.25 2.389-5.25 5.25v1.75H6.5a.25.25 0 0 0-.25.25v4c0 .138.112.25.25.25h2.75V21c0 .138.112.25.25.25h4a.25.25 0 0 0 .25-.25v-6.75h2.75a.25.25 0 0 0 .242-.19l1-4a.25.25 0 0 0-.242-.31h-3.75V8a.76.76 0 0 1 .75-.75h3a.25.25 0 0 0 .25-.25V3a.25.25 0 0 0-.25-.25z" />
                     </svg>
 
-                    <h4 class="c-contact-card-heading" id="c-contact-card-email-heading">Email</h4>
-                    <p><a href="mailto:abc@gmail.com" class="c-contact-card-description"
-                            id="c-contact-card-email-1">abc@gmail.com</a></p>
-                    <p><a href="mailto:abc@gmail.com" class="c-contact-card-description"
-                            id="c-contact-card-email-2">abc@gmail.com</a></p>
-                </div>
-
-                <div class="c-cards" id="c-address-card">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 15 15"
-                        class="c-contact-card-svg" id="c-contact-card-address-svg">
-                        <path fill="currentColor" d="M6 6.496a1.5 1.5 0 0 1 3 0a1.5 1.5 0 0 1-3 0" />
-                        <path fill="currentColor" fill-rule="evenodd"
-                            d="M1 6.496A6.5 6.5 0 0 1 7.5 0C11.089 0 14 2.909 14 6.496c0 2.674-1.338 4.793-2.772 6.225a11 11 0 0 1-2.115 1.654c-.322.19-.623.34-.885.442c-.247.098-.506.174-.728.174s-.481-.076-.728-.174a6.5 6.5 0 0 1-.885-.442a11 11 0 0 1-2.115-1.654C2.338 11.289 1 9.17 1 6.496m6.5-2.499a2.5 2.5 0 0 0-2.5 2.5a2.5 2.5 0 0 0 5 0a2.5 2.5 0 0 0-2.5-2.5"
-                            clip-rule="evenodd" />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                        class="footer-socal-link-svg instagram" id="footer-socal-link-svg-2">
+                        <path fill="currentColor"
+                            d="M12.001 9a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0-2a5 5 0 1 1 0 10a5 5 0 0 1 0-10m6.5-.25a1.25 1.25 0 0 1-2.5 0a1.25 1.25 0 0 1 2.5 0M12.001 4c-2.474 0-2.878.007-4.029.058c-.784.037-1.31.142-1.798.332a2.9 2.9 0 0 0-1.08.703a2.9 2.9 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.007 9.075 4 9.461 4 12c0 2.475.007 2.878.058 4.029c.037.783.142 1.31.331 1.797c.17.435.37.748.702 1.08c.337.336.65.537 1.08.703c.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.475 0 2.878-.007 4.029-.058c.782-.037 1.308-.142 1.797-.331a2.9 2.9 0 0 0 1.08-.703c.337-.336.538-.649.704-1.08c.19-.492.296-1.018.332-1.8c.052-1.103.058-1.49.058-4.028c0-2.474-.007-2.878-.058-4.029c-.037-.782-.143-1.31-.332-1.798a2.9 2.9 0 0 0-.703-1.08a2.9 2.9 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.926 4.006 14.54 4 12 4m0-2c2.717 0 3.056.01 4.123.06c1.064.05 1.79.217 2.427.465c.66.254 1.216.598 1.772 1.153a4.9 4.9 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428c.047 1.066.06 1.405.06 4.122s-.01 3.056-.06 4.122s-.218 1.79-.465 2.428a4.9 4.9 0 0 1-1.153 1.772a4.9 4.9 0 0 1-1.772 1.153c-.637.247-1.363.415-2.427.465c-1.067.047-1.406.06-4.123.06s-3.056-.01-4.123-.06c-1.064-.05-1.789-.218-2.427-.465a4.9 4.9 0 0 1-1.772-1.153a4.9 4.9 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.012 15.056 2 14.717 2 12s.01-3.056.06-4.122s.217-1.79.465-2.428a4.9 4.9 0 0 1 1.153-1.772A4.9 4.9 0 0 1 5.45 2.525c.637-.248 1.362-.415 2.427-.465C8.945 2.013 9.284 2 12.001 2" />
                     </svg>
 
-                    <h4 class="c-contact-card-heading" id="c-contact-card-phone-heading">Address</h4>
-                    <p><a href="#" class="c-contact-card-description" id="c-contact-card-address">2220 Colorado
-                            Avenue, 5th Floor Santa Monica California, USA</a></p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                        class="footer-socal-link-svg X" id="footer-socal-link-svg-3">
+                        <path fill="currentColor"
+                            d="M10.488 14.651L15.25 21h7l-7.858-10.478L20.93 3h-2.65l-5.117 5.886L8.75 3h-7l7.51 10.015L2.32 21h2.65zM16.25 19L5.75 5h2l10.5 14z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                        class="footer-socal-link-svg linkedin" id="footer-socal-link-svg-4">
+                        <path fill="currentColor"
+                            d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                        class="footer-socal-link-svg youtube" id="footer-socal-link-svg-5">
+                        <g fill="none" fill-rule="evenodd">
+                            <path
+                                d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                            <path fill="currentColor"
+                                d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.8 3.8 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954s-.052 2.011-.122 2.954l-.075.91l-.04.425a3.8 3.8 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A62 62 0 0 1 12 20a62 62 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.8 3.8 0 0 1-3.494-3.423l-.04-.425l-.075-.91A41 41 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91l.04-.425A3.8 3.8 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A62 62 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z" />
+                        </g>
+                    </svg>
                 </div>
-            </div>
-        </section>
-
-        <section class="c-form-section">
-            <div class="c-form-tagline-heading">
-                <p id="c-form-tagline">Subscribe</p>
-                <h2 id="c-form-heading">Message us for any inquiry</h2>
-            </div>
-            <div class="c-for-div">
-            <form action="" class="c-form">
-                <input type="text" placeholder="Name" id="c-name" required>
-                <input type="number" placeholder="Phone" id="c-phone-number" required>
-                <input type="email" placeholder="Email" id="c-email" required>
-                <input type="text" placeholder="Subject" id="c-subject" required>
-                <textarea name="Message" id="c-message" placeholder="Message"></textarea>
-                <input type="submit" value="SEND MESSAGE">
-            </form>
-            </div>
-
-        </section>
-
-        <section class="c-map-section">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15249885.318783779!2d82.75252935!3d21.0680074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1752495978319!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="c-map"></iframe>
-        </section>
-    </main>
-
-    <footer class="footer"></footer>
+            </section>
+        </footer>
+    </div>
 
 
     <script>
-        Promise.all([
-            fetch('header.html').then(res => res.text()),
-            fetch('footer.html').then(res => res.text())
-        ]).then(([headerContainer, footerContainer]) => {
-            document.querySelector(".header").innerHTML = headerContainer;
-            document.querySelector(".footer").innerHTML = footerContainer;
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        const closeBtn = document.getElementById('nav-close');
 
-            const hamburger = document.getElementById('hamburger');
-            const navMenu = document.getElementById('nav-menu');
-            const closeBtn = document.getElementById('nav-close');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.add('active');
+            document.querySelector('.hamburger').style.display = "none";
+            document.querySelector('.headerContainer0').style.alignItems = "flex-start";
+        });
 
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.add('active');
-                document.querySelector('.hamburger').style.display = "none";
-            });
+        closeBtn.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            document.querySelector('.hamburger').style.display = "block";
+            document.querySelector('.headerContainer0').style.alignItems = "center";
+        });
 
-            closeBtn.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                document.querySelector('.hamburger').style.display = "block";
-            });
+        document.querySelectorAll('.year').forEach(el => el.innerHTML = new Date().getFullYear())
 
-            const date = new Date();
-            document.querySelectorAll(".year").forEach(el => el.textContent = date.getFullYear());
 
         Promise.all([
             fetch("https://script.google.com/macros/s/AKfycbz3ASi_hM1K0OG9iNq5jfwr1WY4vffWig9IBCGMgQVC8Fsdp4q6CAGHgx4SeJsXFeZfJg/exec")
-            .then(res => res.json())
+                .then(res => res.json())
         ]).then(data => {
             data = data[0];
-            console.log("data: ",data);
+            console.log("data: ", data);
 
             setHeaderAndFooter(data);
 
@@ -155,9 +294,15 @@
             document.getElementById("c-form-heading").textContent = data.c_form_heading
             document.querySelector(".c-map").src = data.c_map
         })
-        })
+            .catch(err => console.error("Somthing Wrong While Updating Data"))
+            .finally(data => {
+                document.getElementById("loader").style.display = "none"
+                document.querySelector(".main-content").style.display = "block"
 
-         function setHeaderAndFooter(data) {
+            })
+
+
+        function setHeaderAndFooter(data) {
             console.log("data :", data);
 
             document.querySelectorAll(".logo").forEach(el => el.src = data.logo)
