@@ -303,6 +303,21 @@
   .s-name-other-card-div {
     width: 95%;
   }
+
+.h-our-team-cards:hover .h-our-team-card-content {
+  opacity: none;
+  visibility: visible;
+}
+
+  .h-our-team-card-content {
+  position: relative;
+  background-color: #185f4f8f;
+  color: white;
+  opacity: 1;
+  transform: none;
+  transition: none;
+  flex-direction: column;
+}
 }
 
 /* ----------- 860px ----------- */

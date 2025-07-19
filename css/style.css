@@ -3,7 +3,6 @@
   --font-heading: 'Montserrat', sans-serif;
   --font-body: 'Quicksand', sans-serif;
 
-
   /* Font Weights */
   --font-weight-heading: 800;
   --font-weight-subheading: 600;
@@ -71,7 +70,6 @@ h1 {
 
 h2,
 h3 {
-
   font-weight: var(--font-weight-subheading);
   font-size: var(--font-size-subheading);
   line-height: var(--line-height-heading);
@@ -797,7 +795,7 @@ a {
 
 .h-our-team-cards p {
   font-size: 0.85rem;
-  color: #666;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
