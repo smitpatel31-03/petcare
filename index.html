@@ -954,6 +954,19 @@
 
     <script>
 
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+            const closeBtn = document.getElementById('nav-close');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.add('active');
+                document.querySelector('.hamburger').style.display = "none";
+            });
+
+            closeBtn.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                document.querySelector('.hamburger').style.display = "block";
+            });
             document.querySelectorAll('.year').forEach(el => el.innerHTML = new Date().getFullYear())
 
             Promise.all([
